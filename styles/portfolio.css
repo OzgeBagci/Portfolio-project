@@ -60,6 +60,7 @@ p {
 .container h1 {
   font-size: 64px;
   line-height: 80px;
+  margin-top: 150px;
 }
 .content h2 {
   font-size: 18px;
@@ -130,26 +131,28 @@ p {
 
 .logo {
   max-width: 250px;
+  border-radius: 100px;
 }
-nav {
+
+#navbarNav {
   padding: 20px 0;
 }
-nav ul {
-  margin: 0;
+#navbarNav ul {
+  margin-left: 450px;
 }
-nav li {
+#navbarNav li {
   display: inline;
   list-style: none;
   line-height: 42px;
   margin: 15px;
 }
-nav a {
+#navbarNav a {
   text-decoration: none;
   color: #272142;
 }
 
-nav a:hover,
-nav li.active a {
+#navbarNav a:hover,
+#navbarNav li.active a {
   color: var(--branding-color);
   transition: 100ms ease-in-out;
 }
@@ -184,6 +187,9 @@ nav li.active a {
 
   .logo {
     max-height: 40px;
+  }
+  #navbarNav ul {
+    margin-left: 0;
   }
   .profile-image {
     margin-left: 0;
