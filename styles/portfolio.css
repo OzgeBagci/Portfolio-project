@@ -25,6 +25,9 @@ h1 {
 h2 {
   font-size: 60px;
 }
+h3 {
+  font-size: 48px;
+}
 p {
   font-weight: normal;
   font-size: 16px;
@@ -116,10 +119,11 @@ p {
   font-size: 18px;
   line-height: 27px;
   padding: 15px 30px;
+  margin-top: -18px;
 }
 .btn-branding:hover {
   border: 1px solid var(--branding-color);
-  color: var(--branding-color);
+  color: var(--branding-color) !important;
 }
 .btn-branding-outline:hover {
   background: var(--branding-color);
@@ -157,6 +161,44 @@ p {
   transition: 100ms ease-in-out;
 }
 
+footer {
+  margin: 70px 50px 10px;
+}
+
+footer .contact-box {
+  background: var(--secondary-color);
+  padding: 30px 100px;
+  margin-bottom: 10px;
+}
+
+footer .contact-box p {
+  margin: 0;
+}
+
+footer .email-link {
+  color: #272142;
+  font-size: 18px;
+}
+
+footer .email-link:hover {
+  color: var(--branding-color);
+}
+
+footer .social-links a {
+  margin: 20px 20px;
+  color: var(--branding-color);
+  background: var(--secondary-color);
+  padding: 10px 14px;
+  border-radius: 50%;
+  font-size: 25px;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--branding-color);
+}
+
 @media (max-width: 900px) {
   .hero {
     margin-top: 20px;
@@ -164,8 +206,8 @@ p {
   }
 
   h1 {
-    font-size: 44px;
-    line-height: 56px;
+    font-size: 44px !important;
+    line-height: 56px !important;
   }
   h2 {
     font-size: 42px;
@@ -179,6 +221,10 @@ p {
   .content-container {
     text-align: center;
     padding: 0;
+  }
+  .project-images {
+    max-width: 110%;
+    height: auto;
   }
   .project-description {
     padding: 0;
