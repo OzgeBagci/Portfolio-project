@@ -162,6 +162,10 @@ p {
   color: var(--branding-color);
   transition: 100ms ease-in-out;
 }
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
 
 footer {
   margin: 70px 50px 10px;
@@ -232,6 +236,7 @@ footer .social-links a:hover {
     max-width: 100%;
     height: auto;
   }
+
   .project-description {
     padding: 0;
     text-align: center;
